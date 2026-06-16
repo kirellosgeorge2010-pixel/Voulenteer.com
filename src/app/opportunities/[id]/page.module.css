@@ -1,0 +1,185 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: var(--bg-secondary);
+  padding: 3rem 0 5rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: var(--text-primary);
+}
+
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .layoutGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.headerCard {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.headerTop {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.orgLogo, .orgLogoPlaceholder {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-md);
+}
+
+.orgLogoPlaceholder {
+  background-color: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--text-secondary);
+}
+
+.titleArea h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.orgName {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.descriptionCard {
+  padding: 2.5rem;
+}
+
+.descriptionCard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.prose p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  white-space: pre-wrap;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  margin: 2rem 0 1rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.applyCard {
+  padding: 2rem;
+}
+
+.applyCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.deadlineInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--danger);
+  font-weight: 500;
+  background-color: rgba(239, 68, 68, 0.1);
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+}
+
+.orgCard {
+  padding: 2rem;
+}
+
+.orgCard h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.orgCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.orgLogoPlaceholderSmall {
+  width: 32px;
+  height: 32px;
+  background-color: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  font-weight: bold;
+}
+
+.orgDesc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.websiteLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.websiteLink:hover {
+  text-decoration: underline;
+}

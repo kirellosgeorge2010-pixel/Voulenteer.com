@@ -1,0 +1,240 @@
+.exploreContainer {
+  min-height: 100vh;
+  background-color: var(--bg-secondary);
+}
+
+.exploreHeader {
+  background-color: var(--bg-primary);
+  padding: 4rem 0 3rem;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.exploreHeader h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.exploreHeader p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+
+.searchBar {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  background-color: var(--bg-secondary);
+  padding: 0.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    flex-direction: column;
+  }
+}
+
+.searchInput {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-md);
+  padding: 0 1rem;
+}
+
+.searchIcon {
+  color: var(--text-tertiary);
+  margin-right: 0.75rem;
+}
+
+.searchInput input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 1rem 0;
+  color: var(--text-primary);
+  font-size: 1rem;
+  outline: none;
+}
+
+.resultsContainer {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 900px) {
+  .resultsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filtersSidebar {
+  background-color: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  height: fit-content;
+}
+
+.filterSection {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.filterSection h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.filterGroup {
+  margin-bottom: 1.5rem;
+}
+
+.filterLabel {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.select {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: var(--radius-md);
+  outline: none;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checkboxGroup label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.resultsHeader {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.emptyResults {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--border-color);
+}
+
+.emptyResults h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.emptyResults p {
+  color: var(--text-tertiary);
+}
+
+.oppCard {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.oppCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.orgInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.orgLogo, .orgLogoPlaceholder {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+}
+
+.orgLogoPlaceholder {
+  background-color: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.oppTitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+  color: var(--text-primary);
+}
+
+.orgName {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+}
+
+.oppDesc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-tertiary);
+  font-size: 0.85rem;
+}
